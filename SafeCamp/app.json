@@ -1,4 +1,8 @@
 {
   "name": "SafeCamp",
-  "displayName": "SafeCamp"
+  "displayName": "SafeCamp",
+  "expo": {
+    "sdkVersion": "32.0.0",
+    "name": "SafeCamp"
+  }
 }
