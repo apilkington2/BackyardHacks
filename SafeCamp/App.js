@@ -14,8 +14,8 @@ import {
   View,
   Text,
   StatusBar,
+  Image
 } from 'react-native';
-
 import {
   Header,
   LearnMoreLinks,
@@ -23,13 +23,14 @@ import {
   DebugInstructions,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+export const BACKGROUND = require('./background.png'); 
 
 const App: () => React$Node = () => {
   return (
     <>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
+      {/* <StatusBar barStyle="dark-content" /> */}
+      {/* <SafeAreaView> */}
+        {/* <ScrollView
           contentInsetAdjustmentBehavior="automatic"
           style={styles.scrollView}>
           <Header />
@@ -66,8 +67,11 @@ const App: () => React$Node = () => {
             </View>
             <LearnMoreLinks />
           </View>
-        </ScrollView>
-      </SafeAreaView>
+        </ScrollView> */}
+      {/* </SafeAreaView> */}
+      <View style={styles.body}>
+        <Image source={BACKGROUND} style={styles.backgroundImage}/>
+      </View> 
     </>
   );
 };
@@ -75,6 +79,14 @@ const App: () => React$Node = () => {
 const styles = StyleSheet.create({
   scrollView: {
     backgroundColor: Colors.lighter,
+  },
+  text: {
+    color: Colors.white,
+  },
+  backgroundImage: {
+    width: '100%',
+    height: '100%',
+    resizeMode: 'cover', // or 'stretch'
   },
   engine: {
     position: 'absolute',
