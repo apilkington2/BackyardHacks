@@ -26,34 +26,50 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 export const BACKGROUND = require('./background.png'); 
-import 'react-native-gesture-handler';
-import { NavigationContainer } from '@react-navigation/native';
-import { createStackNavigator } from '@react-navigation/stack';
-import Home  from './Home';
-import  Camera  from './Camera';
 
-const App: () => React$Node = () => {
-
-  // Variables
+// class Welcome extends React.Component {
+//   render() {
+//     return <h1>Hello, {this.props.name}</h1>;
+//   }
+// }
+class Home extends React.Component {
+  render() {
+      // Variables
   const weather = 'Sunny';
   const temp = 75;
   const day = 'Sunday';
   const uv_index = 6.3;
   const air_quality = 85;
-  const Stack = createStackNavigator();
-
   return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        <Stack.Screen
-          name="Safe Camp"
-          component={Home}
-          // options={{ title: 'Welcome' }}
-        />
-        <Stack.Screen name="Capture!" component={Camera} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    <>
+      <View style={styles.body}>
+        <ImageBackground source={BACKGROUND} style={styles.backgroundImage}>
+          <Text style={styles.day}>{day}</Text>
+          <Text style={styles.temperature}>{temp.toString()}</Text>
+          <Text style={styles.weather}>{weather}</Text>
+
+          <View style={styles.right}>
+            <Text style={styles.uv}>UV Index:</Text>
+            <Text style={styles.uvIndex}>{uv_index.toString()}</Text>
+            <Text style={styles.uv}>Air Quality:</Text>
+            <Text style={styles.uvIndex}>{air_quality.toString()}</Text>
+          </View>          
+
+          <View style={styles.mainConatinerStyle}>
+            <Button color="#339966" title="Scan for Poison Ivy"   onPress={() =>
+        this.props.navigation.navigate('Capture!')
+      }></Button>
+            </View>  
+          <View style={styles.snakesButton}>
+            <Button color="#339966" title="Scan Snakes" onPress={() =>
+        this.props.navigation.navigate('Capture!')
+      }></Button>
+          </View>
+        </ImageBackground>
+      </View> 
+    </>
   );
+    }
 };
 
 const styles = StyleSheet.create({
@@ -63,13 +79,13 @@ const styles = StyleSheet.create({
   mainConatinerStyle: {
     flexDirection: 'column',
     flex: 1,
-    paddingTop: 100,
-    paddingLeft: '25%',
-    paddingRight: '25%'
+    paddingTop: 90,
+    paddingLeft: '20%',
+    paddingRight: '20%'
   },
 snakesButton: {
-  paddingLeft: '25%',
-  paddingRight: '25%',
+  paddingLeft: '20%',
+  paddingRight: '20%',
   paddingBottom: 20
 },
   poisonIvy: {
@@ -154,4 +170,4 @@ snakesButton: {
   },
 });
 
-export default App;
+export default Home;
