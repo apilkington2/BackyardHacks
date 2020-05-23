@@ -97,13 +97,13 @@ snakesButton: {
     marginTop: -165,
   },
   uvIndex: {
-    fontFamily: 'Century Gothic 400',
+    fontFamily: 'century',
     fontSize: 35,
     color: Colors.white,
     paddingLeft: 40
   },
   uv: {
-    fontFamily: 'Century Gothic 400',
+    fontFamily: 'century',
     fontSize: 25,
     color: Colors.white,
     paddingRight: 30
