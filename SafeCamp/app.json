@@ -1,7 +1,4 @@
 {
   "name": "SafeCamp",
-  "displayName": "SafeCamp",
-  "expo": {
-    "name": "SafeCamp"
-  }
+  "displayName": "SafeCamp"
 }

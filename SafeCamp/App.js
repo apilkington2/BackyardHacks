@@ -94,7 +94,7 @@ snakesButton: {
   },
   day: {
     color: Colors.white,
-    fontSize: 25, 
+    fontSize: 25,
     paddingTop: 220,
     fontFamily: 'Century Gothic 400',
     paddingLeft: 50,
