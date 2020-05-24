@@ -24,7 +24,7 @@
 * **Roadmap**
   * Challenges we faced
   * Accomplishments we're proud of
-  * Future of Safe Camp app
+  * Future updates 
 * **Contacts**
 * **Acknowledgements**
 
@@ -51,3 +51,8 @@ The Safe Camp app provides lots of features to it's users. It can detect for **p
 * React Native Application
 * Model Serving
 
+## Challenges we faced
+
+Together we can face any challenges as deep as the ocean and as high as the sky. - Sonia Gandhi
+
+We had been through numerous amounts of challenges throughout this weekend for this project. Firstly, it took us a lot of time just to configure the dependencies and environment for React Native. 
