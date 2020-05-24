@@ -25,7 +25,7 @@
   * Challenges we faced
   * Accomplishments we're proud of
   * Future updates 
-* **Contacts**
+* **Team Members**
 * **Acknowledgements**
 
 ## Inspiration
@@ -55,4 +55,33 @@ The Safe Camp app provides lots of features to it's users. It can detect for **p
 
 Together we can face any challenges as deep as the ocean and as high as the sky. - Sonia Gandhi
 
-We had been through numerous amounts of challenges throughout this weekend for this project. Firstly, it took us a lot of time just to configure the dependencies and environment for React Native. 
+We came across a numerous amount of challenges throughout this weekend for this project. Firstly, the basic setup of dependencies and environment for React Native took us a while. After that we faced issue regarding the configuring of phone camera for our app. We also faced tons of problems in our backend and setups.
+
+But at the end, our perseverance and hard work as a team could make this app a success. Here are a few achievements we are proud of while fixing challenging issues.
+
+## Accomplishemnts we're proud of
+
+First of all, this whole journey of attending the backyard hacks hackathon, the various workshops as well as interacting with so cool coders and mentors, was an accomplishment in itself. 
+
+We are proud of our consistent support to each other in the team as well as helping each other in their field of works.
+
+Our biggest accomplishemnt was to make the React Native app to get to work. It was our first React Native project after all.
+
+We are proud to be able to make a user friendly app which anyone can use to have a safe camping.
+
+## Future updates
+* Camera capture
+* More poisonous organisms detection
+
+## Team Members
+* Adrian
+* Muntaser
+* Bravish
+
+## Acknowledgements
+
+
+## Built with
+* React Native
+
+## Try it out
