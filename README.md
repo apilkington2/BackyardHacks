@@ -43,7 +43,8 @@ The Safe Camp app provides lots of features to its users. It can detect for **po
 
 
 ## Installation of the app
-
+Scan this QR code:
+<img src = "https://user-images.githubusercontent.com/53336715/82753025-23f95780-9de0-11ea-80f0-53e7d0014049.png" height = "400" width = "400">
 
 ## How we built it
 * Data Exploration
