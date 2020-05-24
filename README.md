@@ -1,6 +1,6 @@
-# Safe Camp
+# Safe Camp 
 
-***" Camp Safe not Snake! "***
+![](https://img.shields.io/badge/Safe%20Camp-Camp%20Safe%20not%20Snake-blue)
 
 *An environment and user friendly React Native app made with ❤️*
 
