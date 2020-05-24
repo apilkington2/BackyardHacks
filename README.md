@@ -6,7 +6,9 @@
 
 <img src = "https://user-images.githubusercontent.com/53336715/82744967-d3acd600-9d9c-11ea-8db8-79b48452bd99.png" width="400" height="400">
 
-[View the demo]()
+[View the demo of our Project](https://youtu.be/5GUIZXJOkkk)
+
+[View the demo of Backend work](https://youtu.be/l0i9wPH0wMc)
 
 ## Table of Contents
 
@@ -39,7 +41,28 @@ While in a camp or our backyard, we can come across lots of mysterious plants an
 
 The Safe Camp app provides lots of features to its users. It can detect for **poison ivy and snakes** using photos you upload in the app. What it does is, scans the photo and uses machine learning for the detection. To know more about the backend you can skip to [How we built it part](). Our app can show the **day, weather, temperature, UV index** and **air quality of your location** (needs access to your location settings on your phone). 
 
+![image](https://user-images.githubusercontent.com/53336715/82761411-f203e780-9e17-11ea-8310-e39138060e03.png)
+![image](https://user-images.githubusercontent.com/53336715/82761415-fc25e600-9e17-11ea-8867-7f9a10960e8e.png)
+![image](https://user-images.githubusercontent.com/53336715/82761417-034cf400-9e18-11ea-919f-a5703fa92cb7.png)
+![image](https://user-images.githubusercontent.com/53336715/82761418-09db6b80-9e18-11ea-968d-ddb29482500a.png)
+
+
 ## Prerequisites
+* Expo app on mobile from Play Store or App Store
+  *Expo Client supports running any project that doesn't have custom native modules added.
+
+   - Download the "Expo Client" app from the Play Store or App Store.
+   - Start your project with Expo
+     - Install the CLI `npm i -g expo-cli`
+     - Start the project `expo start`
+   - Open the project:
+     - Sign in to expo and the project will appear in the app.
+     - Or point your phone's camera at the QR code in the terminal
+
+* React Native setup on your system [Visit here](https://shift.infinite.red/getting-started-with-react-native-development-on-windows-90d85a72ae65)
+  * JDK v7 or newer
+  * NodeJS
+  * Android Studio
 
 
 ## Installation of the app
@@ -75,15 +98,14 @@ We are proud to be able to make a user-friendly app that anyone can use to have 
 * More poisonous organisms detection
 
 ## Team Members
+* Bravish
 * Adrian
 * Muntaser
-* Bravish
-
-## Acknowledgements
-
 
 ## Built with
 * React Native
 
 ## Try it out
 https://i.diawi.com/6pCG7Q
+
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/53336715/82761562-098fa000-9e19-11ea-90c9-99835d2385cb.gif)
