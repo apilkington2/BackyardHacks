@@ -22,7 +22,10 @@
   * React Native Application
   * Model Serving
 * **Roadmap**
-* **Contact**
+  * Challenges we faced
+  * Accomplishments we're proud of
+  * Future of Safe Camp app
+* **Contacts**
 * **Acknowledgements**
 
 ## Inspiration
