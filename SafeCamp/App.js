@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, { Component } from 'react';
 import {
   SafeAreaView,
   StyleSheet,
@@ -30,30 +30,55 @@ import 'react-native-gesture-handler';
 import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
 import Home  from './Home';
+import Spring from './Spring';
+import Winter from './Winter';
+import Fall from './Fall';
 import  Camera  from './Camera';
-
-const App: () => React$Node = () => {
+class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {};
+  }
+  
+  render(){
 
   // Variables
-  const weather = 'Sunny';
-  const temp = 75;
-  const day = 'Sunday';
-  const uv_index = 6.3;
-  const air_quality = 85;
+  // const month = new Date().getMonth() + 1;
+  const month = 3;
   const Stack = createStackNavigator();
-
+  
   return (
     <NavigationContainer>
       <Stack.Navigator>
+        {(month > 4  && month < 9)&&         
         <Stack.Screen
           name="Safe Camp"
           component={Home}
           // options={{ title: 'Welcome' }}
-        />
+        />}
+        {(month > 2 && month < 5)&&
+        <Stack.Screen
+        name="Safe Camp"
+        component={Spring}
+        // options={{ title: 'Welcome' }}
+      />}
+      {(month == 12 || month < 3)&&
+        <Stack.Screen
+        name="Safe Camp"
+        component={Winter}
+        // options={{ title: 'Welcome' }}
+      />}
+      {(month > 8 && month < 12)&&
+        <Stack.Screen
+        name="Safe Camp"
+        component={Fall}
+        // options={{ title: 'Welcome' }}
+      />}
         <Stack.Screen name="Capture!" component={Camera} />
       </Stack.Navigator>
     </NavigationContainer>
   );
+  }
 };
 
 const styles = StyleSheet.create({

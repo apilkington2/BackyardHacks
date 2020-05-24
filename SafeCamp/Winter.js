@@ -19,12 +19,12 @@ import {
   ImageBackground
 } from 'react-native';
 import {
-  Colors
+  Colors,
 } from 'react-native/Libraries/NewAppScreen';
-export const BACKGROUND = require('./background.png');
+export const WINTER = require('./winter.png');
 import axios from 'axios';
 
-export default function Home() {
+export default function Winter() {
 
   
       // Variables
@@ -66,7 +66,7 @@ export default function Home() {
   return (
     <>
     <View style={styles.body}>
-        <ImageBackground source={BACKGROUND} style={styles.backgroundImage}>
+        <ImageBackground source={WINTER} style={styles.backgroundImage}>
           <Text style={styles.day}>{day}</Text>
           <Text style={styles.temperature}>{temp.toString()}</Text>
           <Text style={styles.weather}>{weather}</Text>
@@ -79,16 +79,14 @@ export default function Home() {
           </View>          
 
           <View style={styles.mainConatinerStyle}>
-            <Button color="#339966" title="Scan for Poison Ivy"   onPress={() =>
-            this.props.navigation.navigate('Capture!')}>
-            </Button>
-          </View>  
-
+            <Button color="#385d8a" title="Scan for Poison Ivy"   onPress={() =>
+        this.props.navigation.navigate('Capture!')
+      }></Button>
+            </View>  
           <View style={styles.snakesButton}>
-            <Button color="#339966" title="Scan Snakes" onPress={() =>
-            this.props.navigation.navigate('Capture!')
-            }>
-            </Button>
+            <Button color="#385d8a" title="Scan Snakes" onPress={() =>
+        this.props.navigation.navigate('Capture!')
+      }></Button>
           </View>
         </ImageBackground>
       </View>
@@ -124,7 +122,7 @@ snakesButton: {
     fontFamily: 'century',
     fontSize: 35,
     color: Colors.white,
-    paddingLeft: 40
+    paddingLeft: 25
   },
   uv: {
     fontFamily: 'century',
